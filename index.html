@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+	  <head>
+    <meta charset="utf-8">
+    <title>Web Foundations: HTML & CSS</title>
+
+    <!-- CORE CSS -->
+    <link rel="stylesheet" href="node_modules/reveal.js/dist/reset.css">
+    <link rel="stylesheet" href="node_modules/reveal.js/dist/reveal.css">
+    <link rel="stylesheet" href="node_modules/reveal.js/dist/theme/black.css">
+
+    <!-- YOUR CUSTOM CSS -->
+    <link rel="stylesheet" href="custom.css">
+
+    <!-- HIGHLIGHT.JS THEME (optional) -->
+    <link rel="stylesheet" href="node_modules/reveal.js/plugin/highlight/monokai.css">
+  </head>
+	<body>
+		<div class="reveal">
+  <div class="slides">
+
+    <!-- 1️⃣ Title Slide -->
+    <section data-auto-animate>
+      <h2 style="color:#00ffff;">Web Foundations:</h2>
+      <h3 style="color:#fff;">Mastering HTML and CSS from Scratch</h3>
+      <p style="margin-top:30px;">Presented by</p>
+      <h4 style="color:#00ffff;">Adesemowo Emmanuel</h4>
+      <p style="color:#ccc;">"Building the Web"</p>
+    </section>
+
+    <!-- 2️⃣ Introduction -->
+    <section data-auto-animate>
+      <h3>Introduction</h3>
+      <ul>
+        <li>Understanding web foundations is key to every modern website.</li>
+        <li><strong>HTML</strong> defines the structure.</li>
+        <li><strong>CSS</strong> adds design and layout.</li>
+        <li>Together, they form the building blocks of the web.</li>
+      </ul>
+    </section>
+
+    <!-- 3️⃣ What is HTML? -->
+    <section data-auto-animate style="max-height: 100vh; height: max-content; overflow-y: auto; padding: 1em 1.5em; font-size: 2rem;">
+      <h3>What is HTML?</h3>
+      <p><strong>HTML</strong> stands for <em>HyperText Markup Language</em>.</p>
+      <ul>
+        <li>It describes the structure of a webpage.</li>
+        <li>Uses “tags” to represent content elements.</li>
+        <li>Example:</li>
+      </ul>
+      <pre><code class="language-html">
+&lt;h1&gt;Hello World&lt;/h1&gt;
+&lt;p&gt;Welcome to my first webpage.&lt;/p&gt;
+      </code></pre>
+    </section>
+
+    <!-- 4️⃣ HTML Page Structure -->
+    <section data-auto-animate>
+      <h3>Basic HTML Structure</h3>
+      <pre><code class="language-html">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;My First Page&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello World&lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+      </code></pre>
+      <ul>
+        <li><strong>&lt;head&gt;</strong> – holds metadata and title</li>
+        <li><strong>&lt;body&gt;</strong> – contains visible content</li>
+      </ul>
+    </section>
+
+    <!-- 5️⃣ Key HTML Elements -->
+    <section>
+      <h3>Common HTML Elements</h3>
+      <ul>
+        <li>Headings: <code>&lt;h1&gt; to &lt;h6&gt;</code></li>
+        <li>Paragraphs: <code>&lt;p&gt;</code></li>
+        <li>Links: <code>&lt;a href="#"&gt;Link&lt;/a&gt;</code></li>
+        <li>Images: <code>&lt;img src="image.jpg" alt="desc"&gt;</code></li>
+        <li>Lists: <code>&lt;ul&gt;</code> and <code>&lt;ol&gt;</code></li>
+      </ul>
+    </section>
+
+    <!-- 6️⃣ What is CSS -->
+    <section data-auto-animate style="max-height: 100vh; height: max-content; overflow-y: auto; padding: 1em 1.5em; font-size: 2rem;">
+      <h3>What is CSS?</h3>
+      <p><strong>CSS</strong> stands for <em>Cascading Style Sheets</em>.</p>
+      <ul>
+        <li>It adds style, colors, and layout to web pages.</li>
+        <li>Separates design from structure.</li>
+      </ul>
+      <pre><code class="language-css">
+body {
+  background-color: #fafafa;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+      </code></pre>
+    </section>
+
+    <!-- 7️⃣ Ways to Add CSS -->
+    <section>
+      <h3>Ways to Add CSS</h3>
+      <section>
+        <h4>1. Inline CSS</h4>
+        <pre><code class="language-html">
+&lt;h1 style="color:blue;"&gt;Hello&lt;/h1&gt;
+        </code></pre>
+      </section>
+      <section>
+        <h4>2. Internal CSS</h4>
+        <pre><code class="language-html">
+&lt;style&gt;
+  p { color: green; }
+&lt;/style&gt;
+        </code></pre>
+      </section>
+      <section>
+        <h4>3. External CSS</h4>
+        <pre><code class="language-html">
+&lt;link rel="stylesheet" href="styles.css"&gt;
+        </code></pre>
+      </section>
+    </section>
+
+    <!-- 8️⃣ CSS Selectors and Properties -->
+    <section data-auto-animate>
+      <h3>CSS Selectors and Properties</h3>
+      <ul>
+        <li>Selectors target HTML elements.</li>
+        <li>Properties define how they look.</li>
+      </ul>
+      <pre><code class="language-css">
+h1 { color: blue; }
+.highlight { background: yellow; }
+#main { margin: 20px; }
+      </code></pre>
+    </section>
+
+    <!-- 9️⃣ CSS Box Model -->
+    <section data-auto-animate>
+      <h3>The CSS Box Model</h3>
+      <ul>
+        <li>Every element is a rectangular box.</li>
+        <li>Composed of: <strong>Content → Padding → Border → Margin</strong></li>
+      </ul>
+
+    </section>
+
+    <!-- 🔟 CSS Layout -->
+    <section data-auto-animate>
+      <h3>Modern Layouts: Flexbox & Grid</h3>
+      <section>
+        <h4>Flexbox Example</h4>
+        <pre><code class="language-css">
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+        </code></pre>
+      </section>
+      <section>
+        <h4>Grid Example</h4>
+        <pre><code class="language-css">
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+        </code></pre>
+      </section>
+    </section>
+
+    <!-- 11️⃣ Building a Simple Web Page -->
+    <section data-auto-animate style="max-height: 100vh; height: max-content; overflow-y: auto; padding: 1em 1.5em; font-size: 2rem;">
+      <h3>Mini Project: Simple Web Page</h3>
+      <p>Combining HTML + CSS to create a small portfolio card:</p>
+      <pre><code class="language-html">
+&lt;div class="card"&gt;
+  &lt;h2&gt;Adesemowo Emmanuel&lt;/h2&gt;
+  &lt;p&gt;Frontend Developer&lt;/p&gt;
+&lt;/div&gt;
+      </code></pre>
+      <pre><code class="language-css">
+.card {
+  background: #222;
+  color: #00ffff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  text-align: center;
+}
+      </code></pre>
+    </section>
+
+    <!-- 12️⃣ Best Practices -->
+    <section>
+      <h3>Best Practices</h3>
+      <ul>
+        <li>Keep your code clean and indented.</li>
+        <li>Use semantic HTML tags for clarity.</li>
+        <li>Separate structure (HTML) from style (CSS).</li>
+        <li>Use external stylesheets for maintainability.</li>
+        <li>Test across multiple browsers and devices.</li>
+      </ul>
+    </section>
+
+    <!-- 13️⃣ Conclusion -->
+    <section data-auto-animate>
+      <h3>Conclusion</h3>
+      <p>HTML + CSS = The foundation of every website.</p>
+      <p>Master these, and you master the web. 🌐</p>
+      <p style="color:#00ffff;">Thank you!</p>
+    </section>
+
+  </div>
+</div>
+
+
+		    <!-- REVEAL.JS CORE -->
+    <script src="node_modules/reveal.js/dist/reveal.js"></script>
+
+    <!-- PLUGINS (only if you use them) -->
+    <script src="node_modules/reveal.js/plugin/markdown/markdown.js"></script>
+    <script src="node_modules/reveal.js/plugin/highlight/highlight.js"></script>
+    <script src="node_modules/reveal.js/plugin/notes/notes.js"></script>
+
+    <!-- INITIALIZE -->
+    <script>
+      Reveal.initialize({
+        hash: true,
+        plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+      });
+    </script>
+
+	</body>
+</html>
