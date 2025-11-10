@@ -1,19 +1,20 @@
 <!doctype html>
 <html lang="en">
-	  <head>
+	    <head>
     <meta charset="utf-8">
-    <title>Web Foundations: HTML & CSS</title>
+    <title>Web Foundations: Mastering HTML & CSS from Scratch</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- CORE CSS -->
-    <link rel="stylesheet" href="node_modules/reveal.js/dist/reset.css">
-    <link rel="stylesheet" href="node_modules/reveal.js/dist/reveal.css">
-    <link rel="stylesheet" href="node_modules/reveal.js/dist/theme/black.css">
+    <!-- REVEAL.JS CORE -->
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="reveal.css">
+    <link rel="stylesheet" href="theme/black.css"> <!-- or moon.css, etc. -->
 
-    <!-- YOUR CUSTOM CSS -->
+    <!-- YOUR CUSTOM STYLES -->
     <link rel="stylesheet" href="custom.css">
 
-    <!-- HIGHLIGHT.JS THEME (optional) -->
-    <link rel="stylesheet" href="node_modules/reveal.js/plugin/highlight/monokai.css">
+    <!-- HIGHLIGHT.JS (Code Syntax) -->
+    <link rel="stylesheet" href="highlight/monokai.css">
   </head>
 	<body>
 		<div class="reveal">
@@ -221,19 +222,21 @@ h1 { color: blue; }
 </div>
 
 
-		    <!-- REVEAL.JS CORE -->
-    <script src="node_modules/reveal.js/dist/reveal.js"></script>
+    <!-- REVEAL.JS CORE -->
+    <script src="reveal.js"></script>
 
-    <!-- PLUGINS (only if you use them) -->
-    <script src="node_modules/reveal.js/plugin/markdown/markdown.js"></script>
-    <script src="node_modules/reveal.js/plugin/highlight/highlight.js"></script>
-    <script src="node_modules/reveal.js/plugin/notes/notes.js"></script>
+    <!-- PLUGINS -->
+    <script src="highlight/highlight.js"></script>
+    <script src="notes/notes.js"></script>
 
     <!-- INITIALIZE -->
     <script>
       Reveal.initialize({
         hash: true,
-        plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+        slideNumber: 'c/t',
+        showSlideNumber: 'all',
+        transition: 'slide',
+        plugins: [ RevealHighlight, RevealNotes ]
       });
     </script>
 
